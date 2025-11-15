@@ -1,7 +1,5 @@
-name = "codeseed-worker"
+# 编辑 wrangler.toml 文件
+echo 'name = "codeseed-worker"
+main = "main.js"
 compatibility_date = "2025-11-15"
-
-# 可选：如果需要 Node.js 兼容性
-compatibility_flags = [ "nodejs_compat" ]
-
-# 其他配置...
+compatibility_flags = [ "nodejs_compat" ]' > wrangler.toml
