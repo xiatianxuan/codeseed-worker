@@ -1,0 +1,7 @@
+name = "codeseed-worker"
+compatibility_date = "2025-11-15"
+
+# 可选：如果需要 Node.js 兼容性
+compatibility_flags = [ "nodejs_compat" ]
+
+# 其他配置...
