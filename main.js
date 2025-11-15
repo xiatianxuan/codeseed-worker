@@ -1,7 +1,11 @@
 export default {
-  async fetch(request, env, ctx) {
-    return new Response('Worker is working!', {
-      headers: { 'Content-Type': 'text/plain' }
-    });
+  async fetch(request) {
+    try {
+      return new Response("Hello World!", {
+        headers: { "Content-Type": "text/plain" }
+      });
+    } catch (err) {
+      return new Response("Error: " + err.message, { status: 500 });
+    }
   }
 };
